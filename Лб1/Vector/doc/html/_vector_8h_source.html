@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: РСЃС…РѕРґРЅС‹Р№ С„Р°Р№Р» Vector/Vector.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="РџРѕРёСЃРє" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_vector_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Р—Р°РіСЂСѓР·РєР°...</div>
+<div class="SRStatus" id="Searching">РџРѕРёСЃРє...</div>
+<div class="SRStatus" id="NoMatches">РќРµ РЅР°Р№РґРµРЅРѕ</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Vector.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_vector_8h.html">РЎРј. РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_point.html">   20</a></span><span class="keyword">struct </span><a class="code hl_function" href="struct_point.html#a40234d4f2cf61df8c253d1da0d7f2bae">Point</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7">   21</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7">x</a>; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8">   22</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8">y</a>; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_point.html#a05ba3b1dfcb19430582ae953cbbfbded">   23</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#a05ba3b1dfcb19430582ae953cbbfbded">z</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_point.html#a40234d4f2cf61df8c253d1da0d7f2bae">   31</a></span>    <a class="code hl_function" href="struct_point.html#a40234d4f2cf61df8c253d1da0d7f2bae">Point</a>(<span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7">x</a> = 0.0, <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8">y</a> = 0.0, <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_point.html#a05ba3b1dfcb19430582ae953cbbfbded">z</a> = 0.0) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this-&gt;x = <a class="code hl_variable" href="struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7">x</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        this-&gt;y = <a class="code hl_variable" href="struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8">y</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        this-&gt;z = <a class="code hl_variable" href="struct_point.html#a05ba3b1dfcb19430582ae953cbbfbded">z</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_point.html#a9c29cd36d1ce448b8e1e56a204fe2b95">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_point.html#a3a6e3ab3998a4e26c11736cbdbc832ac">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_vector.html">   56</a></span><span class="keyword">class </span><a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_vector.html#a641d812d9292ddc0cdc806df466d3b68">   58</a></span>    <span class="keywordtype">double</span>* <a class="code hl_variable" href="class_vector.html#a641d812d9292ddc0cdc806df466d3b68">coords</a>; </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_vector.html#a89432ea63b881f8230c9efbcba1456b3">   59</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_vector.html#a89432ea63b881f8230c9efbcba1456b3">savedLength</a>; </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_vector.html#ad0b8125e5705cb0e45b5efecc681917e">   60</a></span>    <span class="keyword">mutable</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_vector.html#ad0b8125e5705cb0e45b5efecc681917e">isLengthCalculated</a>; </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_vector.html#a3b1687e9ac2eb7907f5dfddbda65fde6">   61</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_vector.html#a3b1687e9ac2eb7907f5dfddbda65fde6">count</a>; </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; start, <span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; end);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> z1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <span class="keywordtype">double</span> z2);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">~Vector</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a31810b59e0d9106aa17ecf6ae1cfbaf1">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_struct" href="struct_point.html">Point</a> <a class="code hl_function" href="class_vector.html#a3e5d9efe421afc830c0e64c94ac397d7">getStart</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_struct" href="struct_point.html">Point</a> <a class="code hl_function" href="class_vector.html#a2d6c4dec9e5d072e4d6486671cf5f3be">getEnd</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a10094d1e6f6ca7c89e130f3355c1e93a">setStart</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; start);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_vector.html#a8c3daa4d67281d631b77e7bdf2009112">setEnd</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_point.html">Point</a>&amp; end);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#a926f1f4e3fdf3c5cdc5047f72ad57c1d">getVx</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#a1069100107aa5208743af4c034c98a33">getVy</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#a7b8f520b69e45b7cf737d121928d97a6">getVz</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#ac724fdb52264b4933447b88132eb08ab">length</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#acb2addfe8e112effbb77d32c21ebe610">cosAngle</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_vector.html#ab408d95c65a69b9127bc90fec0d7289e">operator^</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">// Арифметические операторы</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#ab67652bffa77db98adcbf48da0e5abab">operator+</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#acbcb1ffd04d881d2d9d693193787e556">operator+=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#a41a06f3dec0af5b0bbf5a85e5feabb67">operator-</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a1b5f826d645256ea206622da31190307">operator-=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="comment">// Векторное произведение двух векторов</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#abd1b34ef73d2e8dc22f8b72f5128171e">operator*</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a077dafc11ce63eadf4c43b45406f546d">operator*=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="comment">// Произведение вектора на число</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#abd1b34ef73d2e8dc22f8b72f5128171e">operator*</a>(<span class="keywordtype">double</span> number) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a077dafc11ce63eadf4c43b45406f546d">operator*=</a>(<span class="keywordtype">double</span> number);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">// Деление вектора на число</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#a3193f68311f80b01238a536e6328a8ef">operator/</a>(<span class="keywordtype">double</span> number) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a756f3ea65aabf6b053491f0c24a36415">operator/=</a>(<span class="keywordtype">double</span> number);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="comment">// Деление двух векторов (покоординатно)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#a3193f68311f80b01238a536e6328a8ef">operator/</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; <a class="code hl_function" href="class_vector.html#a756f3ea65aabf6b053491f0c24a36415">operator/=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// Операторы сравнения</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#ad5435d0dbad5336fe4df23e6ab081612">operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a3e5e4749640f1d3bb8eedd31fb94c59e">operator!=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a0b8083064c94cf51d9e479f74e09b6b2">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a31da4eaacf894046b8e74eef2fa9cc05">operator&gt;=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a638983b45d90f3af57f417db58d281e6">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_vector.html#a2f74667ac3f86a0db7846d4c3de4af12">operator&lt;=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_vector.html#ae2b8a35c3443d88f98dfa229e7fd3eca">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_vector.html#a151160e24be5a02d9ce74c5c4d7a0bce">getCount</a>();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="comment">// Дружественные операторы (не-члены класса)</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">friend</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a> <a class="code hl_function" href="class_vector.html#abd1b34ef73d2e8dc22f8b72f5128171e">operator*</a>(<span class="keywordtype">double</span> number, <span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; vec);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keyword">friend</span> ostream&amp; <a class="code hl_friend" href="class_vector.html#a4104f5f45b80cd85df9e74cc24c18454">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; vec);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keyword">friend</span> istream&amp; <a class="code hl_friend" href="class_vector.html#ac573dec64bd8a6971b2b19e3fe20cc7a">operator&gt;&gt;</a>(istream&amp; is, <a class="code hl_function" href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector</a>&amp; vec);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>};</div>
+</div>
+<div class="ttc" id="aclass_vector_html_a077dafc11ce63eadf4c43b45406f546d"><div class="ttname"><a href="class_vector.html#a077dafc11ce63eadf4c43b45406f546d">Vector::operator*=</a></div><div class="ttdeci">Vector &amp; operator*=(const Vector &amp;other)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:246</div></div>
+<div class="ttc" id="aclass_vector_html_a0b8083064c94cf51d9e479f74e09b6b2"><div class="ttname"><a href="class_vector.html#a0b8083064c94cf51d9e479f74e09b6b2">Vector::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:331</div></div>
+<div class="ttc" id="aclass_vector_html_a10094d1e6f6ca7c89e130f3355c1e93a"><div class="ttname"><a href="class_vector.html#a10094d1e6f6ca7c89e130f3355c1e93a">Vector::setStart</a></div><div class="ttdeci">void setStart(const Point &amp;start)</div><div class="ttdoc">Установка точки начала вектора</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:128</div></div>
+<div class="ttc" id="aclass_vector_html_a1069100107aa5208743af4c034c98a33"><div class="ttname"><a href="class_vector.html#a1069100107aa5208743af4c034c98a33">Vector::getVy</a></div><div class="ttdeci">double getVy() const</div><div class="ttdoc">Проекция вектора по оси Y</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:146</div></div>
+<div class="ttc" id="aclass_vector_html_a151160e24be5a02d9ce74c5c4d7a0bce"><div class="ttname"><a href="class_vector.html#a151160e24be5a02d9ce74c5c4d7a0bce">Vector::getCount</a></div><div class="ttdeci">static int getCount()</div><div class="ttdoc">Получение количества существующих векторов.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:354</div></div>
+<div class="ttc" id="aclass_vector_html_a1b5f826d645256ea206622da31190307"><div class="ttname"><a href="class_vector.html#a1b5f826d645256ea206622da31190307">Vector::operator-=</a></div><div class="ttdeci">Vector &amp; operator-=(const Vector &amp;other)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:219</div></div>
+<div class="ttc" id="aclass_vector_html_a2d6c4dec9e5d072e4d6486671cf5f3be"><div class="ttname"><a href="class_vector.html#a2d6c4dec9e5d072e4d6486671cf5f3be">Vector::getEnd</a></div><div class="ttdeci">Point getEnd() const</div><div class="ttdoc">Получение точки конца вектора.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:123</div></div>
+<div class="ttc" id="aclass_vector_html_a2f74667ac3f86a0db7846d4c3de4af12"><div class="ttname"><a href="class_vector.html#a2f74667ac3f86a0db7846d4c3de4af12">Vector::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:343</div></div>
+<div class="ttc" id="aclass_vector_html_a31810b59e0d9106aa17ecf6ae1cfbaf1"><div class="ttname"><a href="class_vector.html#a31810b59e0d9106aa17ecf6ae1cfbaf1">Vector::operator=</a></div><div class="ttdeci">Vector &amp; operator=(const Vector &amp;other)</div><div class="ttdoc">Оператор присваивания</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:103</div></div>
+<div class="ttc" id="aclass_vector_html_a3193f68311f80b01238a536e6328a8ef"><div class="ttname"><a href="class_vector.html#a3193f68311f80b01238a536e6328a8ef">Vector::operator/</a></div><div class="ttdeci">Vector operator/(double number) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:270</div></div>
+<div class="ttc" id="aclass_vector_html_a31da4eaacf894046b8e74eef2fa9cc05"><div class="ttname"><a href="class_vector.html#a31da4eaacf894046b8e74eef2fa9cc05">Vector::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:335</div></div>
+<div class="ttc" id="aclass_vector_html_a3b1687e9ac2eb7907f5dfddbda65fde6"><div class="ttname"><a href="class_vector.html#a3b1687e9ac2eb7907f5dfddbda65fde6">Vector::count</a></div><div class="ttdeci">static int count</div><div class="ttdoc">Статический счетчик количества созданных объектов.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:61</div></div>
+<div class="ttc" id="aclass_vector_html_a3e5d9efe421afc830c0e64c94ac397d7"><div class="ttname"><a href="class_vector.html#a3e5d9efe421afc830c0e64c94ac397d7">Vector::getStart</a></div><div class="ttdeci">Point getStart() const</div><div class="ttdoc">Получение точки начала вектора.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:118</div></div>
+<div class="ttc" id="aclass_vector_html_a3e5e4749640f1d3bb8eedd31fb94c59e"><div class="ttname"><a href="class_vector.html#a3e5e4749640f1d3bb8eedd31fb94c59e">Vector::operator!=</a></div><div class="ttdeci">bool operator!=(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:327</div></div>
+<div class="ttc" id="aclass_vector_html_a4104f5f45b80cd85df9e74cc24c18454"><div class="ttname"><a href="class_vector.html#a4104f5f45b80cd85df9e74cc24c18454">Vector::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(ostream &amp;os, const Vector &amp;vec)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:363</div></div>
+<div class="ttc" id="aclass_vector_html_a41a06f3dec0af5b0bbf5a85e5feabb67"><div class="ttname"><a href="class_vector.html#a41a06f3dec0af5b0bbf5a85e5feabb67">Vector::operator-</a></div><div class="ttdeci">Vector operator-(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:210</div></div>
+<div class="ttc" id="aclass_vector_html_a638983b45d90f3af57f417db58d281e6"><div class="ttname"><a href="class_vector.html#a638983b45d90f3af57f417db58d281e6">Vector::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:339</div></div>
+<div class="ttc" id="aclass_vector_html_a641d812d9292ddc0cdc806df466d3b68"><div class="ttname"><a href="class_vector.html#a641d812d9292ddc0cdc806df466d3b68">Vector::coords</a></div><div class="ttdeci">double * coords</div><div class="ttdoc">Динамический массив из 6 координат: x1, y1, z1, x2, y2, z2.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:58</div></div>
+<div class="ttc" id="aclass_vector_html_a6f80c73b5f18dcf3f8e36065bdc8b9e5"><div class="ttname"><a href="class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5">Vector::Vector</a></div><div class="ttdeci">Vector()</div><div class="ttdoc">Конструктор по умолчанию</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:30</div></div>
+<div class="ttc" id="aclass_vector_html_a756f3ea65aabf6b053491f0c24a36415"><div class="ttname"><a href="class_vector.html#a756f3ea65aabf6b053491f0c24a36415">Vector::operator/=</a></div><div class="ttdeci">Vector &amp; operator/=(double number)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:283</div></div>
+<div class="ttc" id="aclass_vector_html_a7b8f520b69e45b7cf737d121928d97a6"><div class="ttname"><a href="class_vector.html#a7b8f520b69e45b7cf737d121928d97a6">Vector::getVz</a></div><div class="ttdeci">double getVz() const</div><div class="ttdoc">Проекция вектора по оси Z</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:150</div></div>
+<div class="ttc" id="aclass_vector_html_a89432ea63b881f8230c9efbcba1456b3"><div class="ttname"><a href="class_vector.html#a89432ea63b881f8230c9efbcba1456b3">Vector::savedLength</a></div><div class="ttdeci">double savedLength</div><div class="ttdoc">Сохраненная длина вектора (mutable).</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:59</div></div>
+<div class="ttc" id="aclass_vector_html_a8c3daa4d67281d631b77e7bdf2009112"><div class="ttname"><a href="class_vector.html#a8c3daa4d67281d631b77e7bdf2009112">Vector::setEnd</a></div><div class="ttdeci">void setEnd(const Point &amp;end)</div><div class="ttdoc">Установка точки конца вектора</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:135</div></div>
+<div class="ttc" id="aclass_vector_html_a926f1f4e3fdf3c5cdc5047f72ad57c1d"><div class="ttname"><a href="class_vector.html#a926f1f4e3fdf3c5cdc5047f72ad57c1d">Vector::getVx</a></div><div class="ttdeci">double getVx() const</div><div class="ttdoc">Проекция вектора по оси X</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:142</div></div>
+<div class="ttc" id="aclass_vector_html_ab408d95c65a69b9127bc90fec0d7289e"><div class="ttname"><a href="class_vector.html#ab408d95c65a69b9127bc90fec0d7289e">Vector::operator^</a></div><div class="ttdeci">double operator^(const Vector &amp;other) const</div><div class="ttdoc">Оператор для вычисления косинуса угла между векторами</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:187</div></div>
+<div class="ttc" id="aclass_vector_html_ab67652bffa77db98adcbf48da0e5abab"><div class="ttname"><a href="class_vector.html#ab67652bffa77db98adcbf48da0e5abab">Vector::operator+</a></div><div class="ttdeci">Vector operator+(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:192</div></div>
+<div class="ttc" id="aclass_vector_html_abd1b34ef73d2e8dc22f8b72f5128171e"><div class="ttname"><a href="class_vector.html#abd1b34ef73d2e8dc22f8b72f5128171e">Vector::operator*</a></div><div class="ttdeci">Vector operator*(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:228</div></div>
+<div class="ttc" id="aclass_vector_html_ac573dec64bd8a6971b2b19e3fe20cc7a"><div class="ttname"><a href="class_vector.html#ac573dec64bd8a6971b2b19e3fe20cc7a">Vector::operator&gt;&gt;</a></div><div class="ttdeci">friend istream &amp; operator&gt;&gt;(istream &amp;is, Vector &amp;vec)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:369</div></div>
+<div class="ttc" id="aclass_vector_html_ac724fdb52264b4933447b88132eb08ab"><div class="ttname"><a href="class_vector.html#ac724fdb52264b4933447b88132eb08ab">Vector::length</a></div><div class="ttdeci">double length() const</div><div class="ttdoc">Вычисление длины вектора</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:155</div></div>
+<div class="ttc" id="aclass_vector_html_acb2addfe8e112effbb77d32c21ebe610"><div class="ttname"><a href="class_vector.html#acb2addfe8e112effbb77d32c21ebe610">Vector::cosAngle</a></div><div class="ttdeci">double cosAngle(const Vector &amp;other) const</div><div class="ttdoc">Вычисление косинуса угла между двумя векторами</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:167</div></div>
+<div class="ttc" id="aclass_vector_html_acbcb1ffd04d881d2d9d693193787e556"><div class="ttname"><a href="class_vector.html#acbcb1ffd04d881d2d9d693193787e556">Vector::operator+=</a></div><div class="ttdeci">Vector &amp; operator+=(const Vector &amp;other)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:201</div></div>
+<div class="ttc" id="aclass_vector_html_ad0b8125e5705cb0e45b5efecc681917e"><div class="ttname"><a href="class_vector.html#ad0b8125e5705cb0e45b5efecc681917e">Vector::isLengthCalculated</a></div><div class="ttdeci">bool isLengthCalculated</div><div class="ttdoc">Флаг: посчитана ли уже длина (mutable)</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:60</div></div>
+<div class="ttc" id="aclass_vector_html_ad5435d0dbad5336fe4df23e6ab081612"><div class="ttname"><a href="class_vector.html#ad5435d0dbad5336fe4df23e6ab081612">Vector::operator==</a></div><div class="ttdeci">bool operator==(const Vector &amp;other) const</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:317</div></div>
+<div class="ttc" id="aclass_vector_html_ae2b8a35c3443d88f98dfa229e7fd3eca"><div class="ttname"><a href="class_vector.html#ae2b8a35c3443d88f98dfa229e7fd3eca">Vector::toString</a></div><div class="ttdeci">string toString() const</div><div class="ttdoc">Перевод данных вектора в строку std::string</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:347</div></div>
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdoc">Структура точки в трехмерном пространстве.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:20</div></div>
+<div class="ttc" id="astruct_point_html_a05ba3b1dfcb19430582ae953cbbfbded"><div class="ttname"><a href="struct_point.html#a05ba3b1dfcb19430582ae953cbbfbded">Point::z</a></div><div class="ttdeci">double z</div><div class="ttdoc">Координата Z</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:23</div></div>
+<div class="ttc" id="astruct_point_html_a3a6e3ab3998a4e26c11736cbdbc832ac"><div class="ttname"><a href="struct_point.html#a3a6e3ab3998a4e26c11736cbdbc832ac">Point::operator!=</a></div><div class="ttdeci">bool operator!=(const Point &amp;other) const</div><div class="ttdoc">Сравнение двух точек на неравенство.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:25</div></div>
+<div class="ttc" id="astruct_point_html_a40234d4f2cf61df8c253d1da0d7f2bae"><div class="ttname"><a href="struct_point.html#a40234d4f2cf61df8c253d1da0d7f2bae">Point::Point</a></div><div class="ttdeci">Point(double x=0.0, double y=0.0, double z=0.0)</div><div class="ttdoc">Конструктор точки</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:31</div></div>
+<div class="ttc" id="astruct_point_html_a9c29cd36d1ce448b8e1e56a204fe2b95"><div class="ttname"><a href="struct_point.html#a9c29cd36d1ce448b8e1e56a204fe2b95">Point::operator==</a></div><div class="ttdeci">bool operator==(const Point &amp;other) const</div><div class="ttdoc">Сравнение двух точек на равенство.</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.cpp:15</div></div>
+<div class="ttc" id="astruct_point_html_ab99c56589bc8ad5fa5071387110a5bc7"><div class="ttname"><a href="struct_point.html#ab99c56589bc8ad5fa5071387110a5bc7">Point::x</a></div><div class="ttdeci">double x</div><div class="ttdoc">Координата X</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:21</div></div>
+<div class="ttc" id="astruct_point_html_afa38be143ae800e6ad69ce8ed4df62d8"><div class="ttname"><a href="struct_point.html#afa38be143ae800e6ad69ce8ed4df62d8">Point::y</a></div><div class="ttdeci">double y</div><div class="ttdoc">Координата Y</div><div class="ttdef"><b>РћРїСЂРµРґРµР»РµРЅРёСЏ</b> Vector.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_6f539ff7f1e57d810587ac57a02ef21e.html">Vector</a></li><li class="navelem"><a href="_vector_8h.html">Vector.h</a></li>
+    <li class="footer">РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
